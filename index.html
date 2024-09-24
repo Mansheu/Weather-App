@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <main>
+        <form action="">
+            <input type="text" autocomplete="off" id="valueSearch">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <section class="result">
+            <figure class="name" id="city">
+                <figcaption>Lagos</figcaption>
+                <img src="https://flagsapi.com/NG/shiny/32.png" alt="flag">
+            </figure>
+            <figure class="temperature" id="temperature">
+                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="temperature">
+                <figcaption>
+                    <span>29</span>°
+                </figcaption>
+            </figure>
+
+            <p class="description">
+               Mostly Cloudy
+            </p>
+
+            <ul>
+                <li>
+                    <span>Clouds</span>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span id="clouds">65</span>%
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="humidity">73</span>%
+                </li>
+                <li>
+                    <span>Pressure</span>
+                    <i class="fa-solid fa-gauge"></i>
+                    <span id="pressure">1,103</span>mbar
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Weather App by <b>MansheuDev</b></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
